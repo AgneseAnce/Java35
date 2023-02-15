@@ -1,3 +1,5 @@
+package basics;
+
 public class GlobalAndLocalVariables {
     public static void main(String[] args) {
         int global = 10;

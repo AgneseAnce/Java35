@@ -1,3 +1,5 @@
+package basics;
+
 public class Operators {
     public static void main(String[] args) {
         //Basic arithmetic operators -, +, *, /, %
@@ -7,8 +9,10 @@ public class Operators {
 
         //Assignment operators =, -=, +=, *=, /=
         int a = 10;
-        a = 20;
-        a += 20;
+        a = 20;     //20
+        a += 20;     // 30
+        a -= 20;    // -10
+        a *= 20;    //200
         System.out.println(a);
         a += 20;
 
@@ -20,16 +24,16 @@ public class Operators {
 
         //Post-incrementation
         int num1 =  10;
-        System.out.println(num1++);
+        System.out.println(num1++);     //11
 
         //Pre-incrementation
         int num2 = 10;
-        System.out.println(++num2);
+        System.out.println(++num2);     //10
         System.out.println(num2);
 
         //4 ways to increment by one
 
-        //Relational operators
+        //RELATIONAL OPERATORS
 
         //Equality ==
         int p = 10;

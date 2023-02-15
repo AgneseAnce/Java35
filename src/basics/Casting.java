@@ -1,3 +1,5 @@
+package basics;
+
 public class Casting {
     public static void main(String[] args) {
         //Widening
@@ -6,7 +8,7 @@ public class Casting {
         float num2 = num1;
         System.out.println(num2);
 
-        //Casting
+        //basics.Casting
         float temp = 36.6f;
         System.out.println(temp);
         int temp2 = (int) temp;
