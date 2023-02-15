@@ -7,6 +7,6 @@ public class HW2 {
         Example with an input 122.7 mp/h
         Output --> 122.7 mp/h in km/h would be equal to 197.4665
         */
-        
+
     }
 }
