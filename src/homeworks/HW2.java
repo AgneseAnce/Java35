@@ -1,4 +1,5 @@
 package homeworks;
+import java.util.Scanner;
 
 public class HW2 {
     public static void main(String[] args) {
@@ -7,6 +8,13 @@ public class HW2 {
         Example with an input 122.7 mp/h
         Output --> 122.7 mp/h in km/h would be equal to 197.4665
         */
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the speed in miles per hour");
+        double miles = scanner.nextDouble();
+        double res = miles *1.609;
 
+        float res2 = (float)res;
+
+        System.out.println("It is equal to " + res2 + " km per hour");
     }
 }
