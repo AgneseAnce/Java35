@@ -58,14 +58,14 @@ public class IFStatements {
         } else {
             System.out.println("Invalid input");
         }
-        int someVariable = 5;
-        System.out.println(--someVariable);		// a value of 4 will be printed
+
+
+    }
 
 
 
 
     }
-}
 
 
 

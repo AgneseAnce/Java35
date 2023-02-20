@@ -11,10 +11,10 @@ public class HW2 {
     Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the speed in miles per hour");
         double miles = scanner.nextDouble();
-        double res = miles *1.609;
+        double res = miles *1.609f;
 
         float res2 = (float)res;
 
-        System.out.println("It is equal to " + res2 + " km per hour");
+        System.out.println(miles + " miles per hour equals to " + res2 + " km per hour");
     }
 }
