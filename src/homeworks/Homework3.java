@@ -11,6 +11,15 @@ public class Homework3 {
 
     Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number");
+        int number = scanner.nextInt();
+
+        if(number <90) {
+            System.out.println(false);
+        } else if(number >110) {
+            System.out.println(false);
+        } else {
+                System.out.println(true);
+            }
 
     }
 }
