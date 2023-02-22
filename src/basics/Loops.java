@@ -27,5 +27,19 @@ public class Loops {
         for (int i = 1; i <= 20; i += 2) {
             System.out.print(i + " ");
         }
+        System.out.println();
+        // WHILE loop
+        int i = 100;
+        while (i<=10){
+            System.out.println("This is WHILE loop " + i);
+            i++;
+        }
+
+        // DO WHILE loop
+        i = 1;
+        do {
+            System.out.println("This is DO WHILE loop " +i);
+            i++;
+        } while (i<=10);
     }
 }
