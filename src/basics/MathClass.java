@@ -42,7 +42,7 @@ public class MathClass {
         System.out.println("Random: " + Math.random());
         System.out.println("Random (0-9): " + (int) (Math.random() * 10));
         System.out.println("Random (0-10): " + (int) (Math.random() *11));
-        System.out.println("Random (1-10): " + ((int) (Math.random()) *11) +1);
+        System.out.println("Random (1-10): " + ((int) (Math.random()) *10) +1);
 
 
     }

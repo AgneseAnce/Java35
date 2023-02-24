@@ -7,7 +7,6 @@ public class Homework4 {
         (of type int) and will print true, if both numbers are the
         same sign (both are positive, or both are negative), or false
         otherwise.
-
         If at least one of given numbers is equal to 0, your application
         should print false.*/
 
@@ -18,14 +17,12 @@ public class Homework4 {
         System.out.println("Please enter the second number");
         int num2 = scanner.nextInt();
 
-        if(num1 >=1 && num2 >=1) {
+        if((num1 >=1 && num2 >=1) || (num1 <=-1 && num2 <=-1)) {
             System.out.println("Your input is " +true);
-
-        } else if(num1 <=-1 && num2 <=-1) {
-            System.out.println("Your input is " +true);
-
         } else {
             System.out.println("Your input is " +false);
         }
+    //System.out.println(num1*num2 >0);
+
     }
 }
