@@ -12,5 +12,13 @@ public class Homeworks6 {
         for (char i = 'A'; i <= 'Z'; i++){
             System.out.println(i);
         }
+
+        /* Solution 2
+        for (int i = 65; i <=90; i++){      // 65 = A in the ASCII table, 90 = Z
+         System.out.println((char) i); }
+       Solution 3
+       for (char abc = 65; abc <=90; abc++){
+            System.out.println(abc); }
+         */
     }
 }

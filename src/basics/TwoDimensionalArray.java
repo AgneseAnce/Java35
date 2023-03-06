@@ -1,10 +1,13 @@
 package basics;
 
+import java.util.Arrays;
+
 public class TwoDimensionalArray {
     public static void main(String[] args) {
 
         // Declaring a 2D array with 2 rows and 5 columns
        String [][] dreamCars = new String[2][5];
+       String[][] dreamCars2 = new String[][]{{"Ferrari", "Porsche", "Lambo"}, {"Skoda", "Batcar", "Corvette"}};
 
        dreamCars[0][0] = "Ferrari";
        dreamCars[0][1] = "Porsche";
@@ -34,6 +37,16 @@ public class TwoDimensionalArray {
             }
             System.out.println();
         }
+
+        // Same thing using nested FOR-EACH loops
+        for(String [] rows: dreamCars){
+            for (String car: rows){
+                System.out.print(car + " ");
+            }
+            System.out.println();
+        }
+
+
 
 
 
