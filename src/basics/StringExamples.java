@@ -50,5 +50,40 @@ public class StringExamples {
         // Replace the second instance in this case
         System.out.println(greetings.replaceAll("nice holiday", "nice Easter"));
 
+        // Substring
+        String introduction = "Hello there! My name is Bob and I'm 106";
+        System.out.println(introduction.substring(0));
+        System.out.println(introduction.substring(0, 12));
+
+        String bobsAge = introduction.substring(introduction.length()-3).trim();
+        System.out.println("Bob is " + bobsAge + " years old");
+
+        // Wrapper class - parsing from one data type to another
+        int bobsAgeAsInteger = Integer.parseInt(bobsAge);
+
+        if(bobsAgeAsInteger >= 18){
+            System.out.println("Adult");
+        } else {
+            System.out.println("Child");
+        }
+
+        // Example 2
+        int temp1 = 36;
+        Integer temp2 = 36;
+
+        String intStrValue = "1";
+        String floatStrValue = "2.0";
+        String doubleStrValue = "2.569874265";
+        String booleanStrValue = "true";
+        String longStrValue = "123456987741258963";
+        String charStrValue = "c";
+
+        int intValue = Integer.parseInt(intStrValue);
+        float floatValue = Float.parseFloat(floatStrValue);
+        double doubleValue = Double.parseDouble(doubleStrValue);
+        boolean booleanValue = Boolean.parseBoolean(booleanStrValue);
+        long longValue = Long.parseLong(longStrValue);
+        char charValue = charStrValue.charAt(0);
+
     }
 }
