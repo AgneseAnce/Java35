@@ -1,8 +1,7 @@
 package basics;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
+
 
 public class DateAndTimeExamples {
     public static void main(String[] args) {
@@ -35,6 +34,21 @@ public class DateAndTimeExamples {
         // To return a date in the past rather than now
         LocalDate startOfCovid = LocalDate.of(2019, Month.DECEMBER, 11);
         System.out.println("Covid-19 started on " + startOfCovid);
+
+        // LocalDateTIme
+        LocalDateTime currentDateTime = LocalDateTime.now().withNano(0);
+        System.out.println("Date and time now: " + currentDateTime);
+        System.out.println("Seconds: " + currentDateTime.getSecond());
+
+        LocalDateTime firstInternationalCatsDay = LocalDateTime.of(2002,8,8,10,45,38,0);
+        System.out.println("The first international Cat's Day was celebrated on " + firstInternationalCatsDay);
+
+        // Duration
+        System.out.println(Duration.ofHours(10).toMinutes());
+        System.out.println(Duration.between(LocalDateTime.now(), LocalDateTime.now().plusDays(2)).toMinutes());
+
+        // Period
+        System.out.println("The number of months since the onset of C-19: " + Period.between(startOfCovid, LocalDate.now()).toTotalMonths());
 
 
     }
