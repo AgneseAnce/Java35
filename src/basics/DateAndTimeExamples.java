@@ -4,6 +4,7 @@ import java.time.*;
 
 
 public class DateAndTimeExamples {
+
     public static void main(String[] args) {
 
         // LocalTime - create a local time object, with .now take the local time of computer
@@ -49,7 +50,6 @@ public class DateAndTimeExamples {
 
         // Period
         System.out.println("The number of months since the onset of C-19: " + Period.between(startOfCovid, LocalDate.now()).toTotalMonths());
-
 
     }
 }
