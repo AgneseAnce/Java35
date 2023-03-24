@@ -13,7 +13,7 @@ public class CallingAnimalsClass {
         Animals hamster = new Animals("Common hamster ", 4);
         hamster.printAnimalsInfo();
 
-//        Animals dog2 = new Animals();
+        Animals dog2 = new Animals();
 
 
     }

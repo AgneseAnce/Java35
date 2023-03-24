@@ -25,4 +25,8 @@ public class Animals {
         System.out.println("Average lifespan: " + avgLifespan);
         System.out.println("Weight: " + weight);
     }
+
+    public Animals(){
+
+    }
 }

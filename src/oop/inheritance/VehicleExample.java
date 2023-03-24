@@ -7,7 +7,8 @@ class Vehicle{
         System.out.println("Brand: " + brand);
     }
 }
-// Child class
+
+// Child class - polymorfism
 class Bike extends Vehicle{
     public void honk(){
         System.out.println("Bip-bip");
