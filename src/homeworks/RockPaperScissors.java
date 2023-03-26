@@ -5,32 +5,47 @@ import java.util.Scanner;
 public class RockPaperScissors {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Player One, enter your move: ");
+        System.out.println("Player One, choose ROCK, PAPER, or SCISSORS!");
         String player1 = scanner.nextLine().trim().toLowerCase();
-        System.out.println("Player Two, enter your move: ");
+        System.out.println("Player Two, ROCK, PAPER, or SCISSORS!");
         String player2 = scanner.nextLine().trim().toLowerCase();
-
+        System.out.println(result(player1, player2));
     }
 
-    /* Method rockPaperScissors takes an input from both players (RSP) and returns "P1/P2 wins" or "Tie"
-     Use scanner as input. Input shall be of string type, non-case sensitive. Method only returns a String w/o sout
-     Optional: use a separate method for String validation
-     Optional, perhaps in a separate file: BBTh - rock paper scissors lizard spock
-     where each option can beat and be beaten by two others
-     */
+    public static boolean validateInput1(String player1) {
+        return player1.matches("rock|paper|scissors");
+    }
 
-    public static String rockPaperScissors(String player1, String player2){
-        if(player1 == player2) {
-            System.out.println("It's a TIE!");
+    public static boolean validateInput2(String player2) {
+        return player2.matches("rock|paper|scissors");
+    }
+
+    public static String result(String player1, String player2) {
+        Scanner scanner = new Scanner(System.in);
+
+        String result = "";
+
+        if (!validateInput1(player1)) {
+            result = "Player One, this is not a valid input.";
+
+        } else if (!validateInput2(player2)) {
+            result = "Player Two, this is not a valid input.";
+
+        } else {
+            System.out.println("Player One chose " + player1 + ". Player Two chose " + player2 + ".");
+            if (player1.equals("rock") && player2.equals("scissors")
+                    || player1.equals("scissors") && player2.equals("paper")
+                    || player1.equals("paper") && player2.equals("rock")) {
+                result = "Player One wins with " + player1 + ".";
+            } else if (player1.equals("rock") && player2.equals("paper")
+                    || player1.equals("scissors") && player2.equals("rock")
+                    || player1.equals("paper") && player2.equals("scissors")) {
+                result = "Player Two wins with " + player2 + ".";
+            } else if(player1.equals(player2)) {
+                result = "It's a tie.";
+            }
         }
 
-        String text = "Bike";
-
-        System.out.println(text.equals("rock") || text.equals("paper") || text.equals("scissors"));
-        System.out.println(text.matches("rock|paper|scissors"));
-        return text;
-
+        return result;
     }
-
-
 }
