@@ -1,5 +1,6 @@
 package homeworks;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissors {
@@ -7,8 +8,16 @@ public class RockPaperScissors {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Player One, choose ROCK, PAPER, or SCISSORS!");
         String player1 = scanner.nextLine().trim().toLowerCase();
-        System.out.println("Player Two, ROCK, PAPER, or SCISSORS!");
-        String player2 = scanner.nextLine().trim().toLowerCase();
+//        System.out.println("Player Two, ROCK, PAPER, or SCISSORS!");
+//        String player2 = scanner.nextLine().trim().toLowerCase();
+
+
+        String[] words = {"rock", "paper", "scissors"};
+        Random random = new Random();
+        int randomIndex = random.nextInt(words.length);
+        String player2 = words[randomIndex];
+        System.out.println("Computer: " + player2);
+
         System.out.println(result(player1, player2));
     }
 
