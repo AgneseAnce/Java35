@@ -18,7 +18,7 @@ public class GroceryList {
     public void addGroceryItem(String item){
         groceryList.add(item);
     }
-    // Print all list item
+    // Print all list items
     public void printGroceryList(){
         System.out.println("You have " + groceryList.size() + " items in your grocery list");
         for(int i = 0; i< groceryList.size(); i++){

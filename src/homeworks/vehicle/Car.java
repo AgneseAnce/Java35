@@ -1,7 +1,7 @@
 package homeworks.vehicle;
 
 public class Car extends Vehicle{
-    boolean airconditioner;
+    private boolean airconditioner;
 
     public Car(float fuel, float fuelUsage, int passengers, boolean airconditioner) {
         super(fuel, fuelUsage, passengers);

@@ -21,7 +21,7 @@ public class CallingCar {
                 airconditioner = true;
             }
             Car car1 = new Car(fuel, fuelUsage, passengers, airconditioner);
-            System.out.println("Your vehicle can drive maximum of " + df.format(car1.maxDistance(fuel, fuelUsage, passengers, airconditioner)) + " kilometers");
+            System.out.printf("Your vehicle can drive maximum of %.2f kilometers", car1.maxDistance(fuel, fuelUsage, passengers, airconditioner));
         }
     }
 

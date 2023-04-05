@@ -16,6 +16,7 @@ public class CallingVehicle {
         System.out.println("Enter how many passengers will be in your vehicle");
         int passengers = scanner.nextInt();
         Vehicle vehicle1 = new Vehicle(fuel, fuelUsage, passengers);
-        System.out.println("Your vehicle can drive maximum of " +  df.format(vehicle1.maxDistance(fuel, fuelUsage, passengers)) + " kilometers");
+//        System.out.println("Your vehicle can drive maximum of " +  df.format(vehicle1.maxDistance(fuel, fuelUsage, passengers)) + " kilometers");
+        System.out.printf("Your vehicle can drive maximum of %.2f kilometers", vehicle1.maxDistance());
     }
 }
