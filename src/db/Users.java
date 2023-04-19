@@ -103,6 +103,7 @@ public class Users {
             System.out.println("User has been deleted");
         } else {
             System.out.println("Something went wrong");
+
         }
     }
 }
