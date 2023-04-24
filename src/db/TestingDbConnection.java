@@ -14,7 +14,7 @@ public class TestingDbConnection {
         try{
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/java35", "root", "T3vaknasir?");
+            Connection con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/java35", "root", "$arezgitaPar0le!");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
